@@ -7,6 +7,10 @@ Secondary Color (Light Blue): #98A0F1;
 Accent Color (Yellow): #F7BD33;
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #FEFEFE;
   font-family: 'Spartan', sans-serif;
@@ -19,8 +23,9 @@ body {
 h1, h2, h3 {
   line-height: 1.4;
 }
+
 h1 {
-  font-size: 2.0em;
+  font-size: 1.75em;
   font-weight: 700;
 }
 
@@ -30,28 +35,33 @@ h2 {
 }
 
 h3 {
-  font-weight: 1.25em;
+  font-size: 1.25em;
   font-weight: 400;
 }
 
 img {
   width: 100%;
 }
+
 a {
   color: #0E1E77;
   text-decoration: none; /* No underlining */
 }
+
 a:visited { /* visited link */
   color: #B54242;
 }
+
 a:hover,
 a:focus {
   color: #6D75E7;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
+
 a:active { /* selected link */
   color: #F7BD33;
 }
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #0E1E77;
@@ -62,19 +72,23 @@ a:active { /* selected link */
   border-bottom: 2px solid #98A0F1; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 .button:visited {
   color: #FFFFFF;
 }
+
 .button:hover,
 .button:focus {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button:active {
   opacity: 0.8;
   border-top: 2px solid #0E1E77;
   border-bottom: 0px
 }
+
 .button.contact {
   background-color: transparent;
   color: #0E1E77;
@@ -85,7 +99,119 @@ a:active { /* selected link */
   background-color: #0E1E77;
   color: #ffffff;
 }
+
 .button.contact:active {
   background-color: #98A0F1;
   border: #6D75E7;
 }
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #0E1E77; }
+
+#work h2 {
+  margin: 25px 0;
+}
+
+#hero h1 {
+  text-align: center;
+  font-size: 2.0em;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+header {
+  background-color: #DEE0F7;
+  text-align: center;
+  padding: 10px 0;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow:    0px 4px 10px 0px rgba(50, 50, 50, 0.3);
+  box-shadow:         0px 4px 10px 0px rgba(50, 50, 50, 0.3);
+position: fixed;
+width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #6D75E7;
+}
+
+nav > ul > li > a:visited {
+  color: #98A0F1
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+text-decoration: underline;
+}
+
+nav > ul > li > a:active {
+  color: #F7BD33
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+#hero {
+  background-color: #f4f4f4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 166px;
+}
+
+.social {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.social a {
+  display: inline-block;
+  margin: 5px;
+}
+
+.social svg {
+  width: 40px;
+  height: auto;
+}
+
+#copyright {
+  font-size: 14px;
+  text-align: center;
+}
+
+#about .story { padding-bottom: 25px; border-bottom: 1px solid #0E1E77; }
+
+#about .skills { padding-bottom: 5px; border-bottom: 1px solid #0E1E77; }
+
+.underline {
+  text-decoration: underline;
+}
+
+.takeaway { padding-bottom: 25px; border-bottom: 1px solid #0E1E77; }

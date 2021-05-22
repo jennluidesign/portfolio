@@ -6,7 +6,6 @@ Secondary Color (Medium Blue): #6D75E7;
 Secondary Color (Light Blue): #98A0F1;
 Accent Color (Yellow): #F7BD33;
 */
-
 * {
   box-sizing: border-box;
 }
@@ -45,31 +44,38 @@ img {
 
 a {
   color: #0E1E77;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
 
-a:visited { /* visited link */
+a:visited {
+  /* visited link */
   color: #B54242;
 }
 
 a:hover,
 a:focus {
   color: #6D75E7;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
 
-a:active { /* selected link */
+a:active {
+  /* selected link */
   color: #F7BD33;
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #0E1E77;
-  color: #FFFFFF; /* needed to override the default link color */
+  color: #FFFFFF;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #98A0F1; /* width of the border, type, color */
+  border-bottom: 2px solid #98A0F1;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -79,7 +85,8 @@ a:active { /* selected link */
 
 .button:hover,
 .button:focus {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
@@ -95,6 +102,7 @@ a:active { /* selected link */
   text-transform: uppercase;
   border: 2px solid #0E1E77;
 }
+
 .button.contact:hover {
   background-color: #0E1E77;
   color: #ffffff;
@@ -106,7 +114,6 @@ a:active { /* selected link */
 }
 
 /* Layout styling */
-
 .container {
   padding: 0 15px;
 }
@@ -115,7 +122,10 @@ a:active { /* selected link */
   margin: 25px 0;
 }
 
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #0E1E77; }
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #0E1E77;
+}
 
 #work h2 {
   margin: 25px 0;
@@ -135,38 +145,38 @@ header {
   text-align: center;
   padding: 10px 0;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(50, 50, 50, 0.3);
-  -moz-box-shadow:    0px 4px 10px 0px rgba(50, 50, 50, 0.3);
-  box-shadow:         0px 4px 10px 0px rgba(50, 50, 50, 0.3);
-position: fixed;
-width: 100%;
+  -moz-box-shadow: 0px 4px 10px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 0px 4px 10px 0px rgba(50, 50, 50, 0.3);
+  position: fixed;
+  width: 100%;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 12px;
   text-transform: uppercase;
   font-weight: 700;
   color: #6D75E7;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   color: #98A0F1
 }
 
-nav > ul > li > a:hover,
-nav > ul > li > a:focus {
-text-decoration: underline;
+nav>ul>li>a:hover,
+nav>ul>li>a:focus {
+  text-decoration: underline;
 }
 
-nav > ul > li > a:active {
+nav>ul>li>a:active {
   color: #F7BD33
 }
 
@@ -202,60 +212,91 @@ main {
 }
 
 #copyright {
-  font-size: 14px;
+  font-size: 0.8em;
   text-align: center;
 }
 
-#about .story { padding-bottom: 25px; border-bottom: 1px solid #0E1E77; }
+#about .story {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #0E1E77;
+}
 
-#about .skills { padding-bottom: 5px; border-bottom: 1px solid #0E1E77; }
+#about .skills {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #0E1E77;
+}
 
 .underline {
   text-decoration: underline;
 }
 
-.takeaway { padding-bottom: 25px; border-bottom: 1px solid #0E1E77; }
+.takeaway {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #0E1E77;
+}
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-  text-align: unset;
-  padding: 20px 0 13px;
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 20px;
+  }
+
+  main {
+    padding-top: 124px;
+  }
+
+  #hero {
+    text-align: center;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  #about h3 {
+    margin-top: 0;
+  }
+
+  #work h3 {
+    margin-top: 0;
+  }
+
+  #about h1 {
+    padding: 5px;
+  }
 }
 
-nav {
-  width: auto;
-  float: right;
-  margin-top: 20px;
+#about .row {
+  margin-top: 5px
 }
-
-main {padding-top: 120px; }
-
-#hero {text-align: center;}
-
-#hero span {
-  display: block;
-}
-
-.col-md-6 {
-  width: 50%;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 0 10px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-h2 {text-align: center;}
-
 
 }
 
@@ -263,10 +304,38 @@ h2 {text-align: center;}
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+  .col-lg-7 {
+    width: 58.3%;
+  }
+
+  .col-lg-5 {
+    width: 41.6%;
+  }
+
+  .col-md-6 {
+    width: 100%;
+  }
+
+  #about .story {
+    padding-bottom: 0px;
+    border-bottom: 0px;
+  }
+
+  #about .skills {
+    padding-bottom: 0px;
+    border-bottom: 0px;
+  }
+
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}

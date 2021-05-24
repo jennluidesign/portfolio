@@ -239,38 +239,39 @@ main {
 
 #work h3 {margin-top: 20px;}
 
-.berlin-illustration {
+.progress {
 width: 100%;
 max-width: 100%;
 height: auto;
 }
 
-@keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+@keyframes color-changebtop {
+  from {fill: #31446C;}
+  to {fill: #7921A5;}
 }
 
-.sun {
-  animation: 4s color-change infinite alternate linear;
+.navyround {animation: 4s color-changebtop infinite alternate linear}
+
+@keyframes color-changebtob {
+  from {fill: #666AF6}
+  to {fill: #3C3FA8}
 }
 
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+.ltblueround {animation: 5s color-changebtob infinite alternate linear}
+
+@keyframes color-changegear {
+  from {fill: #666AF6}
+  to {fill: #28A48F}
 }
 
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+.gear {animation: 6s color-changegear infinite alternate linear}
+
+@keyframes pulse {
+  from {transform: scale(1)}
+  to {transform: scale(2.5)}
 }
 
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
+.grayround {animation: 25s pulse infinite alternate linear}
 
 /* ==============================
 Medium devices (640px and larger)

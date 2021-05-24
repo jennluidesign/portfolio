@@ -79,7 +79,7 @@ footer {
   border-radius: 3px;
   border-bottom: 2px solid #98A0F1;
   /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition: 0.3s opacity;
 }
 
 .button:visited {

@@ -266,12 +266,12 @@ height: auto;
 
 .gear {animation: 6s color-changegear infinite alternate linear}
 
-@keyframes pulse {
+@keyframes meteor {
   from {transform: scale(1)}
   to {transform: scale(2.5)}
 }
 
-.grayround {animation: 25s pulse infinite alternate linear}
+.grayround {animation: 25s meteor infinite alternate linear}
 
 /* ==============================
 Medium devices (640px and larger)

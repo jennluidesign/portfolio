@@ -252,26 +252,29 @@ height: auto;
 
 .navyround {animation: 4s color-changebtop infinite alternate linear}
 
-@keyframes color-changebtob {
-  from {fill: #666AF6}
-  to {fill: #3C3FA8}
+@keyframes color-changeptoy {
+  from {fill: #F8AE9D}
+  to {fill: #FFD831}
 }
 
-.ltblueround {animation: 5s color-changebtob infinite alternate linear}
+.peachround {animation: 4s color-changeptoy infinite alternate linear}
 
-@keyframes color-changegear {
+@keyframes color-changebtor {
   from {fill: #666AF6}
-  to {fill: #28A48F}
+  to {fill: #CE66F6}
 }
 
-.gear {animation: 6s color-changegear infinite alternate linear}
+.ltblueround {animation: 6s color-changebtor infinite alternate linear}
 
-@keyframes meteor {
+@keyframes pulse {
   from {transform: scale(1)}
-  to {transform: scale(2.5)}
+  to {transform: scale(1.1)}
 }
 
-.grayround {animation: 25s meteor infinite alternate linear}
+.gear {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: 3s pulse infinite alternate linear}
 
 /* ==============================
 Medium devices (640px and larger)

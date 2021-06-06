@@ -247,6 +247,26 @@ main {
   padding-top: 10px;
 }
 
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 15px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  text-align: center;
+  padding: 12px 0 7px 0;
+  border-top: 1px solid #98A0F1;
+}
+
+.navtoggle.responsive li:last-child  {
+  border-top: none;
+  padding: 0;
+}
+
 .progress {
 width: 100%;
 max-width: 100%;

@@ -9,11 +9,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/7e47e3ec01.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html">
       <svg class="logo" width="171px" height="52px" viewBox="0 0 171 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>logo</title>
@@ -26,11 +28,13 @@
         </g>
       </svg>
     </a>
+  </div>
       <nav>
         <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>

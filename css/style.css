@@ -145,7 +145,7 @@ footer {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
   padding-top: 10px;
 }
 
@@ -339,6 +339,9 @@ footer p {text-align: center;}
 #about img {max-width: 300px;
 margin: auto;
 display: block;}
+
+.logo {
+  max-width: 250px;}
 }
 
 

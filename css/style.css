@@ -151,7 +151,6 @@ footer {
 
 header {
   background-color: #DEE0F7;
-  text-align: center;
   padding: 10px 0;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(50, 50, 50, 0.3);
   -moz-box-shadow: 0px 4px 10px 0px rgba(50, 50, 50, 0.3);
@@ -163,10 +162,6 @@ header {
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
 }
 
 nav>ul>li>a {
@@ -238,6 +233,10 @@ main {
 }
 
 #work h3 {margin-top: 20px;}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
 
 .progress {
 width: 100%;
@@ -342,6 +341,18 @@ display: block;}
 
 .logo {
   max-width: 250px;}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
 }
 
 

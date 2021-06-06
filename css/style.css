@@ -151,7 +151,7 @@ footer {
 
 header {
   background-color: #DEE0F7;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(50, 50, 50, 0.3);
   -moz-box-shadow: 0px 4px 10px 0px rgba(50, 50, 50, 0.3);
   box-shadow: 0px 4px 10px 0px rgba(50, 50, 50, 0.3);
@@ -162,6 +162,7 @@ header {
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -184,11 +185,6 @@ nav>ul>li>a:active {
   color: #F7BD33
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
-
 #hero {
   background-color: #f4f4f4;
   padding: 20px 0;
@@ -197,7 +193,7 @@ nav {
 }
 
 main {
-  padding-top: 135px;
+  padding-top: 73px;
 }
 
 .social {
@@ -236,6 +232,19 @@ main {
 
 .navtoggle li:not(:last-child) {
   display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+  padding-top: 10px;
 }
 
 .progress {
@@ -353,9 +362,11 @@ nav>ul>li {
 .navtoggle li:last-child {
   display: none;
 }
+
+nav > ul {
+  margin: 1em 0;
 }
-
-
+}
 
 /* ==============================
 Large devices (1024px or larger)

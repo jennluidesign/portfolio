@@ -386,6 +386,15 @@ nav>ul>li {
 nav > ul {
   margin: 1em 0;
 }
+
+.navtoggle.responsive nav {
+  padding: 0;
+}
+
+.navtoggle.responsive li  {
+  padding: 0;
+  border-top: none;
+}
 }
 
 /* ==============================

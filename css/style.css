@@ -173,7 +173,7 @@ nav>ul>li>a {
 }
 
 nav>ul>li>a:visited {
-  color: #98A0F1
+  color: #6D75E7
 }
 
 nav>ul>li>a:hover,
@@ -245,10 +245,6 @@ main {
   font-size: 20px;
   padding-right: 0;
   padding-top: 10px;
-}
-
-.navtoggle.responsive li  {
-  display: block;
 }
 
 .navtoggle.responsive nav {
@@ -431,4 +427,5 @@ display: block;}
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+
 }
